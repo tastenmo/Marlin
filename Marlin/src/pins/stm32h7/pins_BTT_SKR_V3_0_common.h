@@ -209,7 +209,7 @@
 #define X2_DIR_PIN                          PD14
 #define X2_ENABLE_PIN                       PC7
 #ifndef X2_CS_PIN
-  #define X_CS_PIN                          PC6
+  #define X2_CS_PIN                         PC6
 #endif
 
 #define Y2_STEP_PIN                         PD11
