@@ -3090,8 +3090,8 @@
   //#define X_CS_PIN      -1
   //#define Y_CS_PIN      -1
   //#define Z_CS_PIN      -1
-  //#define X2_CS_PIN     -1
-  //#define Y2_CS_PIN     -1
+  #define X2_CS_PIN     PC6
+  #define Y2_CS_PIN     PD12
   //#define Z2_CS_PIN     -1
   //#define Z3_CS_PIN     -1
   //#define Z4_CS_PIN     -1
@@ -3306,7 +3306,7 @@
    * Comment *_STALL_SENSITIVITY to disable sensorless homing for that axis.
    * @section tmc/stallguard
    */
-  //#define SENSORLESS_HOMING // StallGuard capable drivers only
+  #define SENSORLESS_HOMING // StallGuard capable drivers only
 
   #if ANY(SENSORLESS_HOMING, SENSORLESS_PROBING)
     // TMC2209: 0...255. TMC2130: -64...63
@@ -3351,7 +3351,7 @@
    * Enable M122 debugging command for TMC stepper drivers.
    * M122 S0/1 will enable continuous reporting.
    */
-  //#define TMC_DEBUG
+  #define TMC_DEBUG
 
   /**
    * You can set your own advanced settings by filling in predefined functions.

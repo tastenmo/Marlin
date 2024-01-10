@@ -205,6 +205,20 @@
   #define E1_CS_PIN                         PD12
 #endif
 
+#define X2_STEP_PIN                         PD15
+#define X2_DIR_PIN                          PD14
+#define X2_ENABLE_PIN                       PC7
+#ifndef X2_CS_PIN
+  #define X_CS_PIN                          PC6
+#endif
+
+#define Y2_STEP_PIN                         PD11
+#define Y2_DIR_PIN                          PD10
+#define Y2_ENABLE_PIN                       PD13
+#ifndef Y2_CS_PIN
+  #define Y2_CS_PIN                         PD12
+#endif
+
 //
 // Temperature Sensors
 //
@@ -307,6 +321,12 @@
 
   #define E1_SERIAL_TX_PIN                  PD12
   #define E1_SERIAL_RX_PIN      E1_SERIAL_TX_PIN
+
+  #define X2_SERIAL_TX_PIN                  PC6
+  #define X2_SERIAL_RX_PIN      X2_SERIAL_TX_PIN
+
+  #define Y2_SERIAL_TX_PIN                  PD12
+  #define Y2_SERIAL_RX_PIN      Y2_SERIAL_TX_PIN
 
   // Reduce baud rate to improve software serial reliability
   #ifndef TMC_BAUD_RATE
