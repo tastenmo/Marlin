@@ -3090,8 +3090,8 @@
   //#define X_CS_PIN      -1
   //#define Y_CS_PIN      -1
   //#define Z_CS_PIN      -1
-  #define X2_CS_PIN     PC6
-  #define Y2_CS_PIN     PD12
+  //#define X2_CS_PIN     PC6
+  //#define Y2_CS_PIN     PD12
   //#define Z2_CS_PIN     -1
   //#define Z3_CS_PIN     -1
   //#define Z4_CS_PIN     -1
